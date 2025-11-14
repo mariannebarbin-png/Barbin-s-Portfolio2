@@ -1,8 +1,8 @@
 const isCodeSandbox = 'SANDBOX_URL' in process.env || 'CODESANDBOX_HOST' in process.env
 
 export default {
-    root: 'src/',
-    publicDir: '../static/',
+    root: 'public',
+    publicDir: 'public',
     base:'/Barbin-s-Portfolio2/',
     server:
     {
@@ -15,4 +15,4 @@ export default {
         emptyOutDir: true,
         sourcemap: true
     }
-}
+} 
