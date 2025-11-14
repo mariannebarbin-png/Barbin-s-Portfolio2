@@ -36,7 +36,6 @@ window.toggleEdit = function() {
   }
 };
 
-// Optional: run DOMContentLoaded logic globally
 document.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
   const btn = document.getElementById("toggleBtn");
@@ -48,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.textContent = "🌙";
   }
 
-  // Restore saved edits
+  
   const savedEdits = JSON.parse(localStorage.getItem("page-edits") || "{}");
   const sections = document.querySelectorAll(
     "section p, section h3, .chips li, #contact address"
