@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marianne B. Barbin - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">Portfolio</h1>
+            <nav aria-label="Primary">
+                <ul class="nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="toggleBtn" onclick="myFunction()">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="content">
+        <section class="hero" aria-labelledby="intro-title">
+            <div class="container">
+                <div class="hero-grid">
+                    <figure class="profile" style="text-align: center;">
+                        <img id="profilephoto" src="./Photos/Pic.jpg" width="500px" alt="Portait of your Name">
+                        <figcaption>Based in Butuan City, PH</figcaption>
+                    </figure>
+                    <div>
+                        <h2 id="intro-title">Hi, I'm Marianne</h2>
+                        <p class="lead">A BSIT student studying at Caraga State University.</p>
+                        <a class="btn" href="#projects">See my work</a>
+                        <button id="editBtn" onclick="toggleEdit()">✏️Edit</button>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" style="text-align: center;">About</h2>
+                <p>
+                    I enjoy building simple yet functional projects. 
+                    My focus is on learning the fundamentals of web design, responsive layouts, 
+                    and basic interactivity while continuously improving my coding skills.
+                </p>
+                <p>
+                    I'm currently practicing<strong> JavaScript</strong> fundamentals, and crafting small projects.
+                    You can reach me on <a href="#contact">email</a> or see may code on <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+                </p>
+            </div>
+        </section>
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title" style="text-align: center;">Projects</h2>
+                <div class="cards"> 
+                    <article class="card">
+                        <img id= "projecta" src="./Photos/Quiz.png" width="200" alt="Screenshot of Project A"/>
+                        <div class="card-body">
+                            <h3>Project A</h3>
+                            <p>An interactive multiple-choice quiz that tracks answers and shows your score.</p>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">View</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img id="projectb" src="./Photos/Recipe.png" width="200" alt="Screenshot of Project B"/>
+                        <div class="card-body">
+                            <h3>Project B</h3>
+                            <p>A simple static site to showcase ingredients and cooking steps for a dish.</p>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">View</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img id="projectc" src="./Photos/Weather.png" alt="Screenshot of Project C"/>
+                        <div class="card-body">
+                            <h3>Project C</h3>
+                            <p>A dynamic app that fetches real-time weather data for any city.</p>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">View</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title" style="text-align: center;">Skills</h2>
+                <ul class="chips" role="list">
+                    <li>Great Communication Skills</li>
+                    <li>CSS</li>
+                    <li>Resposive Design</li>
+                    <li>Database Management</li>
+                    <li>HTML</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" style="text-align: center">Contact</h2>
+                <address style="text-align: center">
+                    Email: <a href="marianne.barbin@carsu.edu.ph">marianne.barbin@carsu.edu.ph</a><br/>
+                    Location: Butuan City, Philippines
+                </address>
+            </div>
+        </section> 
+    </main>
+    <footer class="site-footer">
+        <span id="year">2025</span>MarianneBBarbin
+    </footer>
+
+<script type ="module" src="script.js"></script>
+</body>
+</html>
