@@ -1,5 +1,3 @@
-// public/script.js
-
 window.myFunction = function() {
   const body = document.body;
   const btn = document.getElementById("toggleBtn");
